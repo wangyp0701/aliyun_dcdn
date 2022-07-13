@@ -5,7 +5,7 @@
 
 * 安装依赖
 
-'''
+'''bash
 pip install alibabacloud_dcdn20180115==1.0.15
 '''
 
