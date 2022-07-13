@@ -74,15 +74,14 @@ class Sample:
             # 复制代码运行请自行打印 API 的返回值
             resp = client.describe_dcdn_refresh_tasks_with_options(describe_dcdn_refresh_tasks_request, runtime)
             ConsoleClient.log(UtilClient.to_jsonstring(TeaCore.to_map(resp.body)))
-            tasks = TeaCore.to_map(resp.body).get('Tasks')
-            print(tasks.get("Task")[0].get("Process"))
+            #tasks = TeaCore.to_map(resp.body).get('Tasks')
+            #print(tasks.get("Task")[0].get("Process"))
 
         except Exception as error:
             # 如有需要，请打印 error
             e = UtilClient.assert_as_string(error.message)
             print('\t---------------------------------------------\n', e)
 if __name__ == '__main__':
-    # time.sleep(5)
     Sample.main(sys.argv[1:])
 
 
