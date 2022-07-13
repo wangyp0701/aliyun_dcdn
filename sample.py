@@ -63,7 +63,7 @@ class Sample:
         RefreshTaskId = TeaCore.to_map(resp.body).get('RefreshTaskId')
         # return RefreshTaskId
         #print(RefreshTaskId)
-        time.sleep(0.5)
+        time.sleep(5)
 
         #获取刷新预热任务信息
         describe_dcdn_refresh_tasks_request = dcdn_20180115_models.DescribeDcdnRefreshTasksRequest(
